@@ -1,0 +1,314 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/white"
+    tools:context="com.evismar.leipraque.activities.ProposicaoDetails" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:textAlignment="center" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewNome"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+				android:bufferType="@color/white"
+                android:gravity="center"
+                android:text="Large Text"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewData"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="Medium Text"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/textViewTema"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Tema"
+                android:textColor="@color/purple"
+                android:textSize="17dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textTipoProposicao"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Tipo"
+                android:textSize="16dip"
+                android:textStyle="bold" />
+
+            <com.evismar.leipraque.adjclasses.TextViewEx
+                android:id="@+id/textViewEmenta"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:textSize="15dip" />
+
+
+
+            <TextView
+                android:id="@+id/textViewExpLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Explicação da Proposição:"
+                android:textSize="16dip"
+                android:textStyle="bold" />
+
+            <com.evismar.leipraque.adjclasses.TextViewEx
+                android:id="@+id/textViewExplicacaoEmenta"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Explicacao"
+                android:textSize="15dip" />
+
+            <TextView
+                android:id="@+id/TextViewRegTramLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Regime da Tramitação:"
+                android:textSize="16dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewRegimeTramitacao"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Regime tram"
+                android:textSize="15dip" />
+
+            <TextView
+                android:id="@+id/textViewUltDespLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Último Despacho:"
+                android:textSize="16dip"
+                android:textStyle="bold" />
+
+            <com.evismar.leipraque.adjclasses.TextViewEx
+                android:id="@+id/textViewUltimoDespacho"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Ultimo Desp"
+                android:textSize="15dip" />
+
+            <TextView
+                android:id="@+id/TextViewSitLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Situação:"
+                android:textSize="16dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewSituacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Situacao"
+                android:textSize="15dip" />
+            
+            
+                        <TextView
+                android:id="@+id/TextViewAutLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Autoria:"
+                android:textSize="16dip"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/imageDeputado"
+                        android:layout_width="100dip"
+                        android:layout_height="100dip"
+                        android:src="@drawable/loader" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TableRow
+                            android:id="@+id/tableRow2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textViewAutorNomeLabel"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:gravity="left"
+                                android:text="Nome:"
+                                android:textSize="15dip"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textViewAutorNome"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:gravity="left"
+                                android:text="Nome do Autor"
+                                android:textSize="15dip" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textViewAutorPartidoLabel"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:gravity="left"
+                                android:text="Partido:"
+                                android:textSize="15dip"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textViewAutorPartido"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:gravity="left"
+                                android:text="PSDB/PE"
+                                android:textSize="15dip" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textViewAutorTelLabel"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:gravity="left"
+                                android:text="Telefone:"
+                                android:textSize="15dip"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textViewAutorTel"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:gravity="left"
+                                android:text="(81)9988-8855"
+                                android:textSize="15dip" />
+                        </TableRow>
+
+                         <TableRow
+                            android:id="@+id/tableRow5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                             
+
+                        </TableRow>
+                                                <TableRow
+                            android:id="@+id/tableRow6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+                        </TableRow>
+                        
+                    </TableLayout>
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/textViewAutorEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:textColor="@color/blue"
+                android:text="candidato@gov.com.br"
+                android:textSize="15dip" />
+
+            <Button
+                android:id="@+id/button_so"
+                android:layout_width="200dip"
+                android:layout_height="40dip"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:autoLink="web"
+                android:background="@drawable/propcomp"
+                android:clickable="true"
+                android:cursorVisible="true"
+                android:gravity="center"
+                android:linksClickable="true"
+                android:onClick="goToSo" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

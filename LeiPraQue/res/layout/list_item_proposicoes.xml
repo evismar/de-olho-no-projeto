@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bgitemproposicao"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textViewNome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/bgnome"
+        android:text="Large Text"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textSize="18dip"
+        android:textStyle="bold" />
+
+    <com.evismar.leipraque.adjclasses.TextViewEx
+        android:id="@+id/textViewEmenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewData"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="15dip"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewNome"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/gray"
+        android:textSize="16dip" />
+    
+
+
+</RelativeLayout>
